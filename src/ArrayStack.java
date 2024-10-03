@@ -74,4 +74,5 @@ public class ArrayStack implements StackTAD {
         }
         System.out.println();
     }
+
 }

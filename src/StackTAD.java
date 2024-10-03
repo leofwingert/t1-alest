@@ -32,6 +32,7 @@ public interface StackTAD {
      * @return O elemento presente no topo da pilha.
      */
     public int top();
+
 }
 
 

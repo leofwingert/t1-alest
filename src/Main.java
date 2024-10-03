@@ -52,4 +52,5 @@ public class Main {
             System.out.println("Erro ao tentar acessar topo de pilha vazia: " + e.getMessage()); // Pilha vazia.
         }
     }
+
 }
