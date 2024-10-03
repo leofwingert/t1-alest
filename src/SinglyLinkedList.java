@@ -212,8 +212,18 @@ public class SinglyLinkedList implements ListTAD
 
     @Override
     public int removeFirst() {
-        return 0;
+        if (isEmpty()) {
+            throw new IllegalStateException("Lista vazia");
+        }
+        int removedElement = head.element;
+        head = head.next;
+        count--;
+        if (count == 0) {
+            tail = null;
+        }
+        return removedElement;
     }
+
 
     @Override
     public int removeLast() {
