@@ -9,9 +9,7 @@ public class LinkedQueue implements QueueTAD {
 
     @Override
     public int dequeue() {
-        int x = queue.get(0);
-        queue.removeFirst();
-        return x;
+        return queue.removeFirst();
     }
 
     @Override
