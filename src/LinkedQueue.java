@@ -1,6 +1,6 @@
 
 public class LinkedQueue implements QueueTAD {
-    DoublyLinkedList queue = new DoublyLinkedList();
+    SinglyLinkedList queue = new SinglyLinkedList();
 
     @Override
     public void enqueue(int element) {
@@ -9,26 +9,28 @@ public class LinkedQueue implements QueueTAD {
 
     @Override
     public int dequeue() {
-        return 0;
+        int x = queue.get(0);
+        queue.removeFirst();
+        return x;
     }
 
     @Override
     public int size() {
-        return 0;
+        return queue.size();
     }
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return queue.isEmpty();
     }
 
     @Override
     public void clear() {
-
+        queue.clear();
     }
 
     @Override
     public int head() {
-        return 0;
+        return queue.get(0);
     }
 }
